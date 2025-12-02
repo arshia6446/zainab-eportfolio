@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Art ePortfolio | Artist Projects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-main: #e4d3c0;
+            --overlay: rgba(48, 37, 30, 0.6);
+            --text-main: #fdf7f0;
+            --button-border: rgba(248, 239, 230, 0.85);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Playfair Display", "Times New Roman", serif;
+            min-height: 100vh;
+        }
+
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            color: var(--text-main);
+            background-color: var(--bg-main);
+background-image: url("bg.jpeg");
+background-size: 100% auto;          /* full width, height auto */
+background-repeat: no-repeat;
+background-position: top center;     /* keeps horizon near top */
+background-attachment: fixed;        /* image stays still on scroll */
+            padding: 3rem 1.5rem 4rem;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: var(--overlay);
+        }
+
+        .hero-inner {
+            position: relative;
+            max-width: 1000px;
+            width: 100%;
+            border-radius: 18px;
+            padding: 2.4rem 1.7rem 3.2rem;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            background: rgba(34, 26, 21, 0.55);
+        }
+
+        .top-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.4rem;
+        }
+
+        .nav-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.45rem 1.1rem;
+            border-radius: 999px;
+            border: 1px solid var(--button-border);
+            background: rgba(248, 239, 230, 0.08);
+            color: var(--text-main);
+            text-decoration: none;
+            font-size: 0.8rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            transition: background 0.2s ease, transform 0.15s ease;
+        }
+
+        .nav-btn:hover {
+            background: rgba(248, 239, 230, 0.2);
+            transform: translateY(-1px);
+        }
+
+        .title {
+            font-family: "Great Vibes", cursive;
+            font-size: clamp(2.3rem, 4vw, 3.2rem);
+            margin-bottom: 0.15rem;
+            text-align: center;
+        }
+
+        .subtitle {
+            font-family: "Playfair Display", serif;
+            font-size: 0.95rem;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            margin-bottom: 1.2rem;
+            text-align: center;
+        }
+
+        .line {
+            width: 80px;
+            height: 1px;
+            background: rgba(255, 255, 255, 0.7);
+            margin: 0.4rem auto 1.6rem;
+        }
+
+        /* --- NEW GALLERY SYSTEM --- */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .gallery-item {
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            background: rgba(0, 0, 0, 0.3);
+            padding: 0.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 280px;  /* controls thumbnail size */
+            max-height: 280px;
+        }
+
+        .gallery-item img {
+            width: auto;
+            height: auto;
+            max-width: 260px;
+            max-height: 260px;
+            object-fit: contain; /* preserves original aspect ratio */
+            display: block;
+            border-radius: 8px;
+            transition: transform 0.2s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+
+<body>
+
+<section class="hero">
+    <div class="hero-inner">
+
+        <div class="top-nav">
+            <a href="index.html" class="nav-btn">Home</a>
+            <a href="index2.html" class="nav-btn">← Menu</a>
+        </div>
+
+        <h1 class="title">My Projects Over the Years</h1>
+        <div class="subtitle">Art ePortfolio</div>
+        <div class="line"></div>
+
+        <div class="gallery">
+
+            <!-- Replace filenames as needed -->
+            <div class="gallery-item"><img src="img1.heic"></div>
+            <div class="gallery-item"><img src="img2.heic"></div>
+            <div class="gallery-item"><img src="img3.jpeg"></div>
+            <div class="gallery-item"><img src="img4.jpeg"></div>
+            <div class="gallery-item"><img src="img5.jpeg"></div>
+            <div class="gallery-item"><img src="img6.jpeg"></div>
+            <div class="gallery-item"><img src="img7.heic"></div>
+            <div class="gallery-item"><img src="img8.heic"></div>
+            <div class="gallery-item"><img src="img9.heic"></div>
+            <div class="gallery-item"><img src="img10.heic"></div>
+            <div class="gallery-item"><img src="img11.heic"></div>
+            <div class="gallery-item"><img src="img12.heic"></div>
+            <div class="gallery-item"><img src="img13.heic"></div>
+            <div class="gallery-item"><img src="img14.jpeg"></div>
+
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>

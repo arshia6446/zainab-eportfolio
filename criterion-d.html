@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Criterion D – Evaluating | Artist ePortfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-main: #e4d3c0;
+            --overlay: rgba(48, 37, 30, 0.6);
+            --text-main: #fdf7f0;
+            --button-border: rgba(248, 239, 230, 0.85);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Playfair Display", "Times New Roman", serif;
+            min-height: 100vh;
+        }
+
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            color: var(--text-main);
+            background-color: var(--bg-main);
+background-image: url("bg.jpeg");
+background-size: 100% auto;          /* full width, height auto */
+background-repeat: no-repeat;
+background-position: top center;     /* keeps horizon near top */
+background-attachment: fixed;        /* image stays still on scroll */
+            padding: 3rem 1.5rem 4rem;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: var(--overlay);
+        }
+
+        .hero-inner {
+            position: relative;
+            max-width: 900px;
+            width: 100%;
+            border-radius: 18px;
+            padding: 2.4rem 1.7rem 3.2rem;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            background: rgba(34, 26, 21, 0.55);
+        }
+
+        @media (min-width: 800px) {
+            .hero-inner {
+                padding: 2.6rem 2.4rem 3.4rem;
+            }
+        }
+
+        .top-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.4rem;
+        }
+
+        .nav-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.45rem 1.1rem;
+            border-radius: 999px;
+            border: 1px solid var(--button-border);
+            background: rgba(248, 239, 230, 0.08);
+            color: var(--text-main);
+            text-decoration: none;
+            font-size: 0.8rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            transition: background 0.2s ease, transform 0.15s ease;
+        }
+
+        .nav-btn:hover {
+            background: rgba(248, 239, 230, 0.2);
+            transform: translateY(-1px);
+        }
+
+        .title {
+            font-family: "Great Vibes", cursive;
+            font-size: clamp(2.2rem, 3.8vw, 3rem);
+            margin-bottom: 0.25rem;
+        }
+
+        .subtitle {
+            font-family: "Playfair Display", serif;
+            font-size: 0.95rem;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            margin-bottom: 1.2rem;
+        }
+
+        .line {
+            width: 80px;
+            height: 1px;
+            background: rgba(255, 255, 255, 0.7);
+            margin-bottom: 1.4rem;
+        }
+
+        .section-heading {
+            font-weight: 600;
+            font-size: 0.98rem;
+            margin-top: 1rem;
+            margin-bottom: 0.25rem;
+        }
+
+        p {
+            font-size: 0.95rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 0.7rem;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+<section class="hero">
+    <div class="hero-inner">
+
+        <div class="top-nav">
+            <a href="index.html" class="nav-btn">
+                <span>Home</span>
+            </a>
+            <a href="index2.html" class="nav-btn">
+                ← Menu
+            </a>
+        </div>
+
+        <h1 class="title">Criterion D – Evaluating</h1>
+        <div class="subtitle">Reflecting on artwork and growth</div>
+        <div class="line"></div>
+
+        <h2 class="section-heading">Paragraph 1 — Evaluating My Artwork</h2>
+        <p>
+            I think my mini dress and corset show the themes of happiness, transformation, and softness well.
+            The lavender colours and delicate fabrics create a calm and gentle feeling, while the butterfly-inspired
+            shape represents growth. Experimenting with different materials helped me choose ones that matched the
+            mood I wanted. The floral elements strengthen the symbolism, and the layering effect gives the design an
+            airy look. If I were to improve it, I would add a bit more contrast between structured and soft parts to
+            make it visually stronger.
+        </p>
+
+        <h2 class="section-heading">Paragraph 2 — Evaluating My Growth</h2>
+        <p>
+            This project helped me understand how to connect emotions with visual design. I got better at using mood
+            boards to guide my choices and combining research on colours, culture, and materials to create a clear
+            message. If I did this again, I would try more advanced fabric printing techniques to add deeper texture.
+            Overall, I learned how important intention is in design and how visual elements can communicate feelings,
+            which will help me in future creative projects.
+        </p>
+
+    </div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Artist ePortfolio | Zainab</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-main: #e4d3c0;
+            --overlay: rgba(48, 37, 30, 0.6);
+            --text-main: #fdf7f0;
+            --button-border: rgba(248, 239, 230, 0.85);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Playfair Display", "Times New Roman", serif;
+            min-height: 100vh;
+        }
+
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--text-main);
+            background-color: var(--bg-main);
+background-image: url("bg.jpeg");
+background-size: 100% auto;          /* full width, height auto */
+background-repeat: no-repeat;
+background-position: top center;     /* keeps horizon near top */
+background-attachment: fixed;        /* image stays still on scroll */
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: var(--overlay);
+        }
+
+        .hero-inner {
+            border-radius: 18px;
+            position: relative;
+            max-width: 700px;
+            padding: 2.5rem 1.5rem 3.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            background: rgba(34, 26, 21, 0.55);
+        }
+
+        .title {
+            font-family: "Great Vibes", cursive;
+            font-size: clamp(2.6rem, 5vw, 3.5rem);
+            margin-bottom: 0.4rem;
+        }
+
+        .subtitle {
+            font-family: "Playfair Display", serif;
+            font-size: 1rem;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            margin-bottom: 1.6rem;
+        }
+
+        .line {
+            width: 90px;
+            height: 1px;
+            background: rgba(255, 255, 255, 0.7);
+            margin: 0 auto 1.6rem;
+        }
+
+        .intro-text {
+            max-width: 520px;
+            margin: 0 auto 2.3rem;
+            font-size: 0.95rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .btn-menu {
+            display: inline-block;
+            padding: 0.85rem 2.8rem;
+            border-radius: 999px;
+            border: 1px solid var(--button-border);
+            background: rgba(248, 239, 230, 0.08);
+            color: var(--text-main);
+            text-decoration: none;
+            font-family: "Playfair Display", serif;
+            font-size: 0.9rem;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            transition: background 0.2s ease, transform 0.15s ease;
+        }
+
+        .btn-menu:hover {
+            background: rgba(248, 239, 230, 0.2);
+            transform: translateY(-1px);
+        }
+    </style>
+</head>
+<body>
+
+<section class="hero">
+    <div class="hero-inner">
+        <h1 class="title">Welcome to my artist eportfolio</h1>
+        <div class="subtitle">Presented by: Zainab</div>
+        <div class="line"></div>
+        <p class="intro-text">
+            This eportfolio explores how happiness, identity, and culture can be expressed through fashion,
+            symbolism, and visual storytelling. Use the menu to navigate through each criterion and follow
+            the journey from research to final garment.
+        </p>
+        <a href="index2.html" class="btn-menu">Menu</a>
+    </div>
+</section>
+
+</body>
+</html>

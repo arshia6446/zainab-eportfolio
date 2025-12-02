@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu | Artist ePortfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-main: #e4d3c0;
+            --overlay: rgba(48, 37, 30, 0.6);
+            --text-main: #fdf7f0;
+            --button-border: rgba(248, 239, 230, 0.85);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Playfair Display", "Times New Roman", serif;
+            min-height: 100vh;
+        }
+
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            text-align: center;
+            color: var(--text-main);
+            background-color: var(--bg-main);
+background-image: url("bg.jpeg");
+background-size: 100% auto;          /* full width, height auto */
+background-repeat: no-repeat;
+background-position: top center;     /* keeps horizon near top */
+background-attachment: fixed;        /* image stays still on scroll */
+            padding: 3rem 1.5rem 4rem; /* space above & below box */
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: var(--overlay);
+        }
+
+        .hero-inner {
+            border-radius: 18px;
+            position: relative;
+            max-width: 700px;
+            width: 100%;
+            padding: 2.5rem 1.5rem 3.2rem;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            background: rgba(34, 26, 21, 0.55);
+        }
+
+        @media (min-width: 800px) {
+            .hero-inner {
+                padding: 2.7rem 2.2rem 3.4rem;
+            }
+        }
+
+        .top-nav {
+            display: flex;
+            justify-content: flex-start;
+            margin-bottom: 1.3rem;
+        }
+
+        .nav-btn {
+            display: inline-block;
+            padding: 0.45rem 1.1rem;
+            border-radius: 999px;
+            border: 1px solid var(--button-border);
+            background: rgba(248, 239, 230, 0.08);
+            color: var(--text-main);
+            text-decoration: none;
+            font-size: 0.8rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            transition: background 0.2s ease, transform 0.15s ease;
+        }
+
+        .nav-btn:hover {
+            background: rgba(248, 239, 230, 0.2);
+            transform: translateY(-1px);
+        }
+
+        .title {
+            font-family: "Great Vibes", cursive;
+            font-size: clamp(2.3rem, 4vw, 3.1rem);
+            margin-bottom: 0.4rem;
+        }
+
+        .subtitle {
+            font-family: "Playfair Display", serif;
+            font-size: 0.95rem;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            margin-bottom: 1.3rem;
+        }
+
+        .line {
+            width: 90px;
+            height: 1px;
+            background: rgba(255, 255, 255, 0.7);
+            margin: 0 auto 1.4rem;
+        }
+
+        .intro-text {
+            max-width: 520px;
+            margin: 0 auto 2.1rem;
+            font-size: 0.95rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .criteria-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 0.9rem;
+            text-align: left;
+            margin-bottom: 1.3rem;
+        }
+
+        @media (min-width: 700px) {
+            .criteria-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .criteria-btn {
+            display: block;
+            padding: 0.9rem 1rem;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.45);
+            background: rgba(248, 239, 230, 0.09);
+            text-decoration: none;
+            color: var(--text-main);
+            transition: background 0.2s ease, transform 0.15s ease;
+        }
+
+        .criteria-btn:hover {
+            background: rgba(248, 239, 230, 0.22);
+            transform: translateY(-1px);
+        }
+
+        .criteria-title {
+            font-size: 0.85rem;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            margin-bottom: 0.25rem;
+        }
+
+        .criteria-desc {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.85);
+        }
+
+        /* Extra row for the Art ePortfolio button */
+        .extra-btn-row {
+            margin-top: 0.8rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .extra-btn {
+            display: inline-block;
+            padding: 0.9rem 1.4rem;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.45);
+            background: rgba(248, 239, 230, 0.09);
+            text-decoration: none;
+            color: var(--text-main);
+            font-size: 0.9rem;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            transition: background 0.2s ease, transform 0.15s ease;
+        }
+
+        .extra-btn:hover {
+            background: rgba(248, 239, 230, 0.22);
+            transform: translateY(-1px);
+        }
+
+    </style>
+</head>
+<body>
+
+<section class="hero">
+    <div class="hero-inner">
+        <div class="top-nav">
+            <a href="index.html" class="nav-btn">Home</a>
+        </div>
+
+        <h1 class="title">Criteria Menu</h1>
+        <div class="subtitle">Select a criterion to explore</div>
+        <div class="line"></div>
+
+        <p class="intro-text">
+            Each criterion shows a different part of my project: research, development, creation,
+            and reflection. Click any of the buttons below to view the related writing and project gallery.
+        </p>
+
+        <div class="criteria-grid">
+            <a href="criterion-a.html" class="criteria-btn">
+                <div class="criteria-title">Criteria A</div>
+                <div class="criteria-desc">
+                    Investigating themes, symbolism, visual culture, and emotional design.
+                </div>
+            </a>
+
+            <a href="criterion-b.html" class="criteria-btn">
+                <div class="criteria-title">Criteria B</div>
+                <div class="criteria-desc">
+                    Developing ideas through sketches, fabrics, and material experiments.
+                </div>
+            </a>
+
+            <a href="criterion-c.html" class="criteria-btn">
+                <div class="criteria-title">Criteria C</div>
+                <div class="criteria-desc">
+                    Creating the final mini dress and corset concept.
+                </div>
+            </a>
+
+            <a href="criterion-d.html" class="criteria-btn">
+                <div class="criteria-title">Criteria D</div>
+                <div class="criteria-desc">
+                    Evaluating my artwork and my growth as an artist.
+                </div>
+            </a>
+        </div>
+
+        <!-- Centered Art ePortfolio button -->
+        <div class="extra-btn-row">
+            <!-- change href later to your art page file -->
+            <a href="art-eportfolio.html" class="extra-btn">Art ePortfolio</a>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>

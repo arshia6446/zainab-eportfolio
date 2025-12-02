@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Criterion C – Creating | Artist ePortfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-main: #e4d3c0;
+            --overlay: rgba(48, 37, 30, 0.6);
+            --text-main: #fdf7f0;
+            --button-border: rgba(248, 239, 230, 0.85);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Playfair Display", "Times New Roman", serif;
+            min-height: 100vh;
+        }
+
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            color: var(--text-main);
+           background-color: var(--bg-main);
+background-image: url("bg.jpeg");
+background-size: 100% auto;          /* full width, height auto */
+background-repeat: no-repeat;
+background-position: top center;     /* keeps horizon near top */
+background-attachment: fixed;        /* image stays still on scroll */
+            padding: 3rem 1.5rem 4rem;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: var(--overlay);
+        }
+
+        .hero-inner {
+            position: relative;
+            max-width: 900px;
+            width: 100%;
+            border-radius: 18px;
+            padding: 2.4rem 1.7rem 3.2rem;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            background: rgba(34, 26, 21, 0.55);
+        }
+
+        @media (min-width: 800px) {
+            .hero-inner {
+                padding: 2.6rem 2.4rem 3.4rem;
+            }
+        }
+
+        .top-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.4rem;
+        }
+
+        .nav-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.45rem 1.1rem;
+            border-radius: 999px;
+            border: 1px solid var(--button-border);
+            background: rgba(248, 239, 230, 0.08);
+            color: var(--text-main);
+            text-decoration: none;
+            font-size: 0.8rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            transition: background 0.2s ease, transform 0.15s ease;
+        }
+
+        .nav-btn:hover {
+            background: rgba(248, 239, 230, 0.2);
+            transform: translateY(-1px);
+        }
+
+        .title {
+            font-family: "Great Vibes", cursive;
+            font-size: clamp(2.2rem, 3.8vw, 3rem);
+            margin-bottom: 0.25rem;
+        }
+
+        .subtitle {
+            font-family: "Playfair Display", serif;
+            font-size: 0.95rem;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            margin-bottom: 1.2rem;
+        }
+
+        .line {
+            width: 80px;
+            height: 1px;
+            background: rgba(255, 255, 255, 0.7);
+            margin-bottom: 1.4rem;
+        }
+
+        .section-heading {
+            font-weight: 600;
+            font-size: 0.98rem;
+            margin-top: 1rem;
+            margin-bottom: 0.25rem;
+        }
+
+        p {
+            font-size: 0.95rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 0.7rem;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+<section class="hero">
+    <div class="hero-inner">
+
+        <div class="top-nav">
+            <a href="index.html" class="nav-btn">
+                <span>Home</span>
+            </a>
+            <a href="index2.html" class="nav-btn">
+                ← Menu
+            </a>
+        </div>
+
+        <h1 class="title">Criterion C – Creating</h1>
+        <div class="subtitle">Artistic intention and final concept</div>
+        <div class="line"></div>
+
+        <h2 class="section-heading">Paragraph 1 — Artistic Intention</h2>
+        <p>
+            My goal was to design a mini dress and corset that visually express happiness through themes of
+            transformation, softness, and nature. Butterflies represent growth, flowers represent purity and beauty,
+            and lavender tones create a calm feeling. I chose light materials like lace and organza because they move
+            gently and create an airy look. Adding small gold details brought warmth into the design and helped
+            highlight the emotional meaning behind it.
+        </p>
+
+        <h2 class="section-heading">Paragraph 2 — Final Concept</h2>
+        <p>
+            When I moved from planning to the final design, I shaped the dress so it would resemble soft butterfly
+            wings through curved and layered edges. I added floral prints or embroidery to represent inner joy and
+            natural beauty. Gold accents were placed carefully to bring elegance and warmth. Every choice—shape,
+            colour, fabric, and detail—connected back to my research on visual culture, designers like Phạm Đăng Anh
+            Thư, Marimekko, Finnish design ideas, and colour psychology. Altogether, the design communicates happiness
+            and transformation the way I intended.
+        </p>
+
+    </div>
+</section>
+
+</body>
+</html>
