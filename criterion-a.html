@@ -1,152 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Criterion A – Investigating | Artist ePortfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg-main: #e4d3c0;
+            --overlay: rgba(48, 37, 30, 0.6);
+            --text-main: #fdf7f0;
+            --button-border: rgba(248, 239, 230, 0.85);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Playfair Display", "Times New Roman", serif;
+            min-height: 100vh;
+        }
+
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            color: var(--text-main);
+            background-color: var(--bg-main);
+            background-image: url("bg.jpeg");
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            background-position: top center;
+            background-attachment: fixed;
+            padding: 3rem 1.5rem 4rem;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: var(--overlay);
+        }
+
+        .hero-inner {
+            position: relative;
+            max-width: 900px;
+            width: 100%;
+            border-radius: 18px;
+            padding: 2.4rem 1.7rem 3.2rem;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            background: rgba(34, 26, 21, 0.55);
+        }
+
+        @media (min-width: 800px) {
+            .hero-inner {
+                padding: 2.6rem 2.4rem 3.4rem;
+            }
+        }
+
+        .top-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.4rem;
+        }
+
+        .nav-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.45rem 1.1rem;
+            border-radius: 999px;
+            border: 1px solid var(--button-border);
+            background: rgba(248, 239, 230, 0.08);
+            color: var(--text-main);
+            text-decoration: none;
+            font-size: 0.8rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            transition: background 0.2s ease, transform 0.15s ease;
+        }
+
+        .nav-btn:hover {
+            background: rgba(248, 239, 230, 0.2);
+            transform: translateY(-1px);
+        }
+
+        .title {
+            font-family: "Great Vibes", cursive;
+            font-size: clamp(2.2rem, 3.8vw, 3rem);
+            margin-bottom: 0.25rem;
+        }
+
+        .subtitle {
+            font-family: "Playfair Display", serif;
+            font-size: 0.95rem;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+            margin-bottom: 1.2rem;
+        }
+
+        .line {
+            width: 80px;
+            height: 1px;
+            background: rgba(255, 255, 255, 0.7);
+            margin-bottom: 1.4rem;
+        }
+
+        .section-heading {
+            font-weight: 600;
+            font-size: 0.98rem;
+            margin-top: 1rem;
+            margin-bottom: 0.25rem;
+        }
+
+        p {
+            font-size: 0.95rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 0.7rem;
+            line-height: 1.6;
+        }
+    </style>
+</head>
 <body>
 
 <section class="hero">
     <div class="hero-inner">
 
         <div class="top-nav">
-            <a href="index.html" class="nav-btn">Home</a>
-            <a href="index2.html" class="nav-btn">← Menu</a>
-        </div>
-
-        <h1 class="title">Criterion A – Investigating</h1>
-        <div class="subtitle">Themes, symbolism and visual culture</div>
-        <div class="line"></div>
-
-        <!-- STATEMENT OF INVESTIGATION -->
-        <h2 class="section-heading">Statement of Investigation</h2>
-        <p>
-            Happiness can be derived from and shared through communal visuals, especially in visual culture
-            where symbols, colours, and design choices communicate emotional meaning and collective identity.
-        </p>
-
-        <!-- FACTUAL, CONCEPTUAL, DEBATABLE QUESTIONS OVERVIEW -->
-        <h2 class="section-heading">Unit Focus & Guiding Questions</h2>
-        <p><strong>Key Concept:</strong> Communication</p>
-        <p><strong>Related Concepts:</strong> Visual culture, interpretation</p>
-        <p><strong>Global Context:</strong> Identities and relationships</p>
-
-        <h2 class="section-heading">Factual, Conceptual & Debatable Questions</h2>
-        <p>
-            This investigation explores how happiness and emotional identity can be communicated through symbolic
-            visuals, artistic design, cultural expression, and non-verbal communication.
-        </p>
-
-        <!-- FACTUAL QUESTION 1 -->
-        <h2 class="section-heading">Factual Question 1 — What symbolic meaning might be read into happiness?</h2>
-        <p>
-            Happiness can be symbolized in many ways, through colours, shapes, textures, and cultural motifs. A
-            sunrise may represent new beginnings, while fireworks show shared joy. Colours like yellow signal warmth
-            and cheerfulness, while green often symbolizes growth and peace. Shapes such as hearts, circles, and
-            butterflies communicate joy, love, and transformation. In fashion and visual culture, happiness is
-            expressed through materials and design choices. Swarovski crystals can represent brilliance and triumph,
-            while flowing fabrics suggest freedom and ease. Phạm Đăng Anh Thư’s Ice Phoenix gown, covered in thousands
-            of crystals, symbolizes rebirth and radiant transformation. Different cultures interpret symbols
-            differently, which makes happiness a flexible but powerful form of non-verbal communication.
-        </p>
-
-        <!-- FACTUAL QUESTION 2 -->
-        <h2 class="section-heading">Factual Question 2 — Where in our lives can we use non-verbal communication of emotions?</h2>
-        <p>
-            Non-verbal communication is present in everyday life. A smile, posture, or gesture can express emotion
-            without words. Art also communicates emotion through brushstrokes, movement, or sound. Fashion silently
-            conveys identity and confidence, as seen in Anh Thư’s crystal corsets that express elegance and joy.
-            Rituals such as weddings, festivals, and blessings use flowers, colours, and gestures to communicate
-            collective happiness. Even digital spaces use emojis and visual cues to show humor, affection, or excitement.
-            Non-verbal communication crosses cultures and languages, making emotions instantly recognizable.
-        </p>
-
-        <!-- CONCEPTUAL QUESTION 1 -->
-        <h2 class="section-heading">Conceptual Question 1 — What is happiness, and how do people in our society define and benefit from it?</h2>
-        <p>
-            Happiness is often described as well-being, balance, and fulfillment, but it varies from person to person.
-            Some find happiness in goals and success; others find it in family, faith, creativity, or community.
-            Fashion and art express happiness as empowerment, confidence, or beauty. Wearing a crystal-covered gown,
-            like Anh Thư’s Ice Phoenix, can symbolize both inner joy and personal expression. Happiness improves mental
-            health, strengthens relationships, increases creativity, and supports resilience. A happy community values
-            empathy, culture, and self-expression.
-        </p>
-
-        <!-- CONCEPTUAL QUESTION 2 -->
-        <h2 class="section-heading">Conceptual Question 2 — How does society respond to emotional well-being, and how can people act upon it?</h2>
-        <p>
-            Society’s approach to emotional well-being varies. Some cultures openly promote mental health support,
-            mindfulness, and creative expression, while others may stigmatize emotional struggles. Visual culture helps
-            fill these gaps by allowing people to express feelings through symbols, colours, and design. Anh Thư’s gowns
-            empower the wearer and allow emotions like confidence and triumph to be seen. People can support emotional
-            well-being by being empathetic, encouraging creative expression, and creating safe spaces for communication.
-            Festivals, art events, and rituals help communities celebrate happiness together.
-        </p>
-
-        <!-- CONCEPTUAL QUESTION 3 -->
-        <h2 class="section-heading">Conceptual Question 3 — How does visual culture express values on social media and face-to-face?</h2>
-        <p>
-            Visual culture communicates values universally, both online and in person. Social media uses emojis, art,
-            photography, and viral images to show happiness or empowerment. A sparkling couture gown might gain
-            attention for its emotional impact, not only its design. In person, visual culture appears in murals,
-            rituals, fashion shows, and traditional crafts. A Swarovski-embroidered wedding dress expresses unity and
-            joy, while murals may symbolize hope or protest. Visual culture allows values to be shared instantly and
-            emotionally across communities.
-        </p>
-
-        <!-- DEBATABLE QUESTION -->
-        <h2 class="section-heading">Debatable Question — How do different people and cultures define happiness?</h2>
-        <p>
-            Happiness differs widely across cultures. In collectivist cultures, happiness is linked to family, unity,
-            and community rituals. In individualist cultures, happiness may be tied to independence, success, or
-            personal expression, such as wearing a bold, crystal-covered corset to show confidence. Some view happiness
-            as comfort and wealth; others see it as spiritual peace or artistic fulfillment. Asian phoenix symbolism
-            represents rebirth and harmony, while Western couture sometimes expresses happiness through spectacle and
-            power. Happiness is diverse, shaped by identity, beliefs, and cultural values.
-        </p>
-
-        <!-- ART MOVEMENT SECTION -->
-        <h2 class="section-heading">Art Movement — Contemporary Couture</h2>
-        <p><strong>Time Period & Origin:</strong> Early 2000s, developed strongly in Paris before spreading globally.</p>
-        <p><strong>Influences:</strong> Chanel, Dior, McQueen; Vietnamese phoenix symbolism; Finnish design optimism.</p>
-        <p><strong>Major Artists:</strong> Phạm Đăng Anh Thư, Alexander McQueen.</p>
-        <p><strong>Characteristics:</strong> Flowing fabrics, sculptural silhouettes, heavy embellishment, hand embroidery,
-            organza layering, Swarovski crystals, colour gradients, emotional storytelling.</p>
-        <p><strong>Genre:</strong> Wearable art, symbolic couture, fashion-art crossover.</p>
-
-        <!-- CASE STUDY 1 -->
-        <h2 class="section-heading">Case Study 1 — Phạm Đăng Anh Thư</h2>
-        <p>
-            Vietnamese couturier Phạm Đăng Anh Thư blends cultural symbolism with European couture techniques. Her Ice
-            Phoenix gown uses satin for structure, organza for flow, and thousands of Swarovski crystals for brilliance
-            and empowerment. The blue-to-purple gradient represents clarity and spiritual transformation, while the
-            phoenix symbolizes resilience. Her designs emphasize meaning over trends, using line, colour, texture,
-            balance, and repetition to evoke feelings of strength and rebirth. This case study informs symbolic motifs,
-            gradients, and storytelling techniques used in my own design process.
-        </p>
-
-        <!-- CASE STUDY 2 -->
-        <h2 class="section-heading">Case Study 2 — Marimekko</h2>
-        <p>
-            Founded in Finland in 1951, Marimekko transformed textile design through bold patterns and vibrant colours.
-            The Unikko (Poppy) print symbolizes joy and collective positivity through simplified floral shapes, rhythm,
-            and repetition. Marimekko’s philosophy brings art into daily life, contrasting with exclusive haute couture.
-            The designs reflect Finland’s post-war optimism and cultural identity. Studying Marimekko helped shape my use
-            of pattern repetition, colour harmony, and emotional storytelling.
-        </p>
-
-        <!-- COMPARATIVE ANALYSIS -->
-        <h2 class="section-heading">Comparative Analysis</h2>
-        <p><strong>Anh Thư:</strong> symbolic motifs, gradients, sculptural forms, empowerment.</p>
-        <p><strong>Marimekko:</strong> bold repetition, joyful colours, accessible pattern design.</p>
-        <p>
-            Together, they show how both individual emotion (empowerment, transformation) and collective joy (optimism,
-            unity) can be communicated visually.
-        </p>
-
-        <!-- CONCLUSION -->
-        <h2 class="section-heading">Conclusion</h2>
-        <p>
-            Contemporary couture and textile design demonstrate how visual culture communicates different forms of
-            happiness. Through symbolic motifs, colour psychology, and emotional storytelling, art becomes a universal
-            bridge across identities and cultures.
-        </p>
-
-    </div>
-</section>
-
-</body>
+            <a href="index.html" class="nav-btn">
+                <span>Home</span>
+            </a>
+            <a href="index2.html" class="nav-btn">
+                ←
