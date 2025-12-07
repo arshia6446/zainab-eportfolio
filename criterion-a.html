@@ -1,188 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Criterion A – Investigating | Artist ePortfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
-
-    <style>
-        :root {
-            --bg-main: #e4d3c0;
-            --overlay: rgba(48, 37, 30, 0.6);
-            --text-main: #fdf7f0;
-            --button-border: rgba(248, 239, 230, 0.85);
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: "Playfair Display", "Times New Roman", serif;
-            min-height: 100vh;
-        }
-
-        .hero {
-            position: relative;
-            min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            color: var(--text-main);
-            background-color: var(--bg-main);
-background-image: url("bg.jpeg");
-background-size: 100% auto;          /* full width, height auto */
-background-repeat: no-repeat;
-background-position: top center;     /* keeps horizon near top */
-background-attachment: fixed;        /* image stays still on scroll */
-            padding: 3rem 1.5rem 4rem; /* space above + below */
-        }
-
-        .hero::before {
-            content: "";
-            position: absolute;
-            inset: 0;
-            background: var(--overlay);
-        }
-
-        .hero-inner {
-            position: relative;
-            max-width: 900px;
-            width: 100%;
-            border-radius: 18px;
-            padding: 2.4rem 1.7rem 3.2rem;
-            border: 1px solid rgba(255, 255, 255, 0.5);
-            background: rgba(34, 26, 21, 0.55);
-        }
-
-        @media (min-width: 800px) {
-            .hero-inner {
-                padding: 2.6rem 2.4rem 3.4rem;
-            }
-        }
-
-        .top-nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 1.4rem;
-        }
-
-        .nav-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.4rem;
-            padding: 0.45rem 1.1rem;
-            border-radius: 999px;
-            border: 1px solid var(--button-border);
-            background: rgba(248, 239, 230, 0.08);
-            color: var(--text-main);
-            text-decoration: none;
-            font-size: 0.8rem;
-            letter-spacing: 0.1em;
-            text-transform: uppercase;
-            transition: background 0.2s ease, transform 0.15s ease;
-        }
-
-        .nav-btn:hover {
-            background: rgba(248, 239, 230, 0.2);
-            transform: translateY(-1px);
-        }
-
-        .title {
-            font-family: "Great Vibes", cursive;
-            font-size: clamp(2.2rem, 3.8vw, 3rem);
-            margin-bottom: 0.25rem;
-        }
-
-        .subtitle {
-            font-family: "Playfair Display", serif;
-            font-size: 0.95rem;
-            letter-spacing: 0.16em;
-            text-transform: uppercase;
-            margin-bottom: 1.2rem;
-        }
-
-        .line {
-            width: 80px;
-            height: 1px;
-            background: rgba(255, 255, 255, 0.7);
-            margin-bottom: 1.4rem;
-        }
-
-        .section-heading {
-            font-weight: 600;
-            font-size: 0.98rem;
-            margin-top: 1rem;
-            margin-bottom: 0.25rem;
-        }
-
-        p {
-            font-size: 0.95rem;
-            color: rgba(255, 255, 255, 0.9);
-            margin-bottom: 0.7rem;
-            line-height: 1.6;
-        }
-    </style>
-</head>
 <body>
 
 <section class="hero">
     <div class="hero-inner">
 
         <div class="top-nav">
-            <!-- back to home -->
-            <a href="index.html" class="nav-btn">
-                <span>Home</span>
-            </a>
-            <!-- back to menu -->
-            <a href="index2.html" class="nav-btn">
-                ← Menu
-            </a>
+            <a href="index.html" class="nav-btn">Home</a>
+            <a href="index2.html" class="nav-btn">← Menu</a>
         </div>
 
         <h1 class="title">Criterion A – Investigating</h1>
         <div class="subtitle">Themes, symbolism and visual culture</div>
         <div class="line"></div>
 
-        <h2 class="section-heading">Paragraph 1 — Themes, Symbolism & Visual Culture</h2>
+        <!-- STATEMENT OF INVESTIGATION -->
+        <h2 class="section-heading">Statement of Investigation</h2>
         <p>
-            To start my research, I looked into how visual things like symbols, colours, and patterns can show
-            emotions—especially happiness, change, and personal identity. I focused on simple symbols such as
-            butterflies, flowers, and hearts because they all represent ideas like growth, beauty, and connection.
-            Butterflies reminded me of transformation, while floral designs felt soft and peaceful. I also checked
-            what different colours make people feel, and shades like lavender and pastels stood out because they’re
-            calming and gentle. All this helped me build my mood board and guided the style and mood of my mini dress
-            and corset design.
+            Happiness can be derived from and shared through communal visuals, especially in visual culture
+            where symbols, colours, and design choices communicate emotional meaning and collective identity.
         </p>
 
-        <h2 class="section-heading">Paragraph 2 — Movements & Designers (Marimekko + Finnish Design)</h2>
+        <!-- FACTUAL, CONCEPTUAL, DEBATABLE QUESTIONS OVERVIEW -->
+        <h2 class="section-heading">Unit Focus & Guiding Questions</h2>
+        <p><strong>Key Concept:</strong> Communication</p>
+        <p><strong>Related Concepts:</strong> Visual culture, interpretation</p>
+        <p><strong>Global Context:</strong> Identities and relationships</p>
+
+        <h2 class="section-heading">Factual, Conceptual & Debatable Questions</h2>
         <p>
-            I also explored Marimekko and general Finnish design, which focus a lot on happiness found in everyday
-            life, nature, and simple, bold patterns. Their designs are cheerful but not overwhelming, and that
-            influenced how I used floral details and clean shapes. The Finnish idea of “Sisu,” which means inner
-            strength and resilience, also connected to how nature-based imagery can express emotional well-being.
-            Even though my final design is more romantic and couture-inspired, these ideas shaped the way I thought
-            about symbols and the story my design communicates.
+            This investigation explores how happiness and emotional identity can be communicated through symbolic
+            visuals, artistic design, cultural expression, and non-verbal communication.
         </p>
 
-        <h2 class="section-heading">Paragraph 3 — Happiness, Clothing & Emotional Design</h2>
+        <!-- FACTUAL QUESTION 1 -->
+        <h2 class="section-heading">Factual Question 1 — What symbolic meaning might be read into happiness?</h2>
         <p>
-            Another part of my research was understanding how clothing can affect emotions. The KonMari method
-            inspired me because it links clothing with joy and comfort. This is why I experimented with soft fabrics
-            like lace, organza, and satin—they naturally feel gentle and expressive. I also learned that texture,
-            shape, and colour can show emotions without words. Flowing fabrics can represent freedom, floral details
-            can show purity, and touches of gold can feel warm and uplifting. All of this helped me create a design
-            meant to express happiness through visual elements.
+            Happiness can be symbolized in many ways, through colours, shapes, textures, and cultural motifs. A
+            sunrise may represent new beginnings, while fireworks show shared joy. Colours like yellow signal warmth
+            and cheerfulness, while green often symbolizes growth and peace. Shapes such as hearts, circles, and
+            butterflies communicate joy, love, and transformation. In fashion and visual culture, happiness is
+            expressed through materials and design choices. Swarovski crystals can represent brilliance and triumph,
+            while flowing fabrics suggest freedom and ease. Phạm Đăng Anh Thư’s Ice Phoenix gown, covered in thousands
+            of crystals, symbolizes rebirth and radiant transformation. Different cultures interpret symbols
+            differently, which makes happiness a flexible but powerful form of non-verbal communication.
         </p>
 
-    </div>
-</section>
-
-</body>
-</html>
+        <!-- FACTUAL QUESTION 2 -->
+        <h2 class="section-heading">Factual Question 2 — Where in our lives can we use non-verbal communication of emotions?</h2>
+        <p>
+            Non-verbal communication is present in everyday life. A smile, posture, or gesture can express emotion
+            without words. Art also communicates emotion through brushstrokes, movement, or sound. Fashion silently
+            conveys identity and confidence, as seen in Anh Thư’s crystal corsets that express elegance and joy.
+            Rituals such as weddings, festivals, and blessings use flowers, colours, and gestures to communicate
+            collective happiness. Even digital spaces use emojis and visual cues to show humor, affection, or excitement.
+            Non-verbal communicatio
